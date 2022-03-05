@@ -1,0 +1,7 @@
+﻿  task_2_class_string.cpp
+E:\beginner_of_cxx\cxx\task_2_class_string\task_2_class_string\task_2_class_string.cpp(19,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\beginner_of_cxx\cxx\task_2_class_string\task_2_class_string\task_2_class_string.cpp(38,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\beginner_of_cxx\cxx\task_2_class_string\task_2_class_string\task_2_class_string.cpp(58,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\beginner_of_cxx\cxx\task_2_class_string\task_2_class_string\task_2_class_string.cpp(59,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+E:\beginner_of_cxx\cxx\task_2_class_string\task_2_class_string\task_2_class_string.cpp(82,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  task_2_class_string.vcxproj -> E:\beginner_of_cxx\cxx\task_2_class_string\x64\Debug\task_2_class_string.exe
