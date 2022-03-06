@@ -1,5 +1,3 @@
-﻿
-
 #include <iostream>
 #include <string>
 
@@ -10,9 +8,11 @@ struct Student {
     int balls[3];
 };
 
-void print(Student* st) {
+void print(Student* st)
+{
     setlocale(LC_ALL, "ru");
-    for (int i = 0; i < sizeof(st); i++) {
+    for (int i = 0; i < sizeof(st); ++i)
+    {
 
         std::cout << "Student number " << i + 1 << ": ";
         std::cout << "Surname: "; std::cout << st[i].lastname;
@@ -27,20 +27,22 @@ void print(Student* st) {
     }
 }
 
-Student* sort(Student* st) {
-
+Student* sort(Student* st)
+{
     int sr[sizeof(st)] = { 0, 0, 0 };
-    for (int i = 0; i < sizeof(st); i++) {
-        for (int j = 0; j < 3; j++) {
+    for (int i = 0; i < sizeof(st); ++i)
+    {
+        for (int j = 0; j < 3; ++j) 
+        {
             sr[i] += st[i].balls[j];
         }
     }
 
     Student tempst;
-    int tempsr;                           // 4 1 5 3
-    for (int i = 0; i < sizeof(st) - 1; i++)
+    unsigned int tempsr;                      
+    for (int i = 0; i < sizeof(st) - 1; ++i)
     {
-        for (int j = 0; j < sizeof(st) - i - 1; j++) 
+        for (int j = 0; j < sizeof(st) - i - 1; ++j) 
         {
             if (sr[j] > sr[j + 1]) 
             {
@@ -67,7 +69,8 @@ int main()
         std::cout << "Enter number of students: ";
         std::cin >> numberOfStudents;
         
-        if (numberOfStudents < 5) {
+        if (numberOfStudents < 5)
+        {
             std::cout << "Quantity must be greater than or equal to 5!\n";
         }
     } while (numberOfStudents < 5);
@@ -87,10 +90,10 @@ int main()
     }
 
     std::cout << "_____________________________________________________________________" << std::endl;
-    print(students);
-    cout << "__________________Sorted array_____________________________" << std::endl;
-    sort(students);
-    print(students);
+    std::print(students);
+    std::cout << "__________________Sorted array_____________________________" << std::endl;
+    std::sort(students);
+    std::print(students);
 
     delete[] students;
     return 0;
