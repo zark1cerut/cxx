@@ -15,7 +15,8 @@ public:
 		int length = strlen(str);
 		this->str = new char[length + 1];
 
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length; i++)
+		{
 
 			this->str[i] = str[i];
 
@@ -34,7 +35,8 @@ public:
 		int length = strlen(other.str);
 		this->str = new char[length + 1];
 
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length; i++)
+		{
 
 			this->str[i] = other.str[i];
 
@@ -82,16 +84,19 @@ public:
 		int count = 0;
 
 
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < length; i++)
+		{
 
 
 			this->str[i] = other.str[i];
 
-			if (other.str[i] == lastch) {
+			if (other.str[i] == lastch) 
+			{
 				
 				count++;
 			}
-			if (other.str[i] == ' ') {
+			if (other.str[i] == ' ')
+			{
 
 				this->str[i] = lastch;
 
@@ -108,7 +113,8 @@ public:
 
 
 
-	void Print() {
+	void Print()
+	{
 
 		cout << str;
 	}
