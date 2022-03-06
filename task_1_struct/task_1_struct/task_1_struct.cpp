@@ -3,31 +3,26 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-
 struct Student {
 
     string lastname;
     string firstname;
     int balls[3];
-
-
-
 };
 
 void print(Student* st) {
     setlocale(LC_ALL, "ru");
     for (int i = 0; i < sizeof(st); i++) {
 
-        cout << "Student number " << i + 1 << ": ";
-        cout << "Surname: "; cout << st[i].lastname;
-        cout << " Name: "; cout << st[i].firstname;
-        cout << " 3 rating: ";
-        for (int j = 0; j < 3; j++) {
-            cout << st[i].balls[j] << " ";
+        std::cout << "Student number " << i + 1 << ": ";
+        std::cout << "Surname: "; std::cout << st[i].lastname;
+        std::cout << " Name: "; std::cout << st[i].firstname;
+        std::cout << " 3 rating: ";
+        for (int j = 0; j < 3; j++)
+        {
+           std::cout << st[i].balls[j] << " ";
         }
-        cout << endl;
+        std::cout << std::endl;
 
     }
 }
@@ -43,9 +38,12 @@ Student* sort(Student* st) {
 
     Student tempst;
     int tempsr;                           // 4 1 5 3
-    for (int i = 0; i < sizeof(st) - 1; i++) {
-        for (int j = 0; j < sizeof(st) - i - 1; j++) {
-            if (sr[j] > sr[j + 1]) {
+    for (int i = 0; i < sizeof(st) - 1; i++)
+    {
+        for (int j = 0; j < sizeof(st) - i - 1; j++) 
+        {
+            if (sr[j] > sr[j + 1]) 
+            {
 
                 tempsr = sr[j];
                 sr[j] = sr[j + 1];
@@ -64,39 +62,36 @@ Student* sort(Student* st) {
 int main()
 {
     setlocale(LC_ALL, "ru");
-    int N;
+    unsigned int numberOfStudents = 0;
     do {
-        cout << "Enter number of students: ";
-
-        cin >> N;
-        if (N < 5) {
-            cout << "Quantity must be greater than or equal to 5!\n";
+        std::cout << "Enter number of students: ";
+        std::cin >> numberOfStudents;
+        
+        if (numberOfStudents < 5) {
+            std::cout << "Quantity must be greater than or equal to 5!\n";
         }
-    } while (N < 5);
+    } while (numberOfStudents < 5);
 
-    Student* students = new Student[N];
+    Student* students = new Student[numberOfStudents];
 
-
-    for (int i = 0; i < N; i++) {
-
-        cout << "Student number " << i + 1 << ":\n";
-        cout << "Surname: "; cin >> students[i].lastname;
-        cout << "Name: "; cin >> students[i].firstname;
-        cout << "3 rating: ";
-        for (int j = 0; j < 3; j++) {
-            cin >> students[i].balls[j];
+    for (int i = 0; i < numberOfStudents; ++i)
+    {
+        std::cout << "Student number " << i + 1 << ":\n";
+        std::cout << "Surname: "; std::cin >> students[i].lastname;
+        std::cout << "Name: "; std::cin >> students[i].firstname;
+        std::cout << "3 rating: ";
+        for (int j = 0; j < 3; ++j)
+        {
+            std::cin >> students[i].balls[j];
         }
-
-
     }
 
-    cout << "_____________________________________________________________________" << endl;
+    std::cout << "_____________________________________________________________________" << std::endl;
     print(students);
-    cout << "__________________Sorted array_____________________________" << endl;
+    cout << "__________________Sorted array_____________________________" << std::endl;
     sort(students);
-
     print(students);
-
 
     delete[] students;
+    return 0;
 }
