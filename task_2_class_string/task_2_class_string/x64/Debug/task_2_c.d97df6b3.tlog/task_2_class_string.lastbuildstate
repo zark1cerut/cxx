@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.30.30705:TargetPlatformVersion=10.0.19041.0:
 Debug|x64|E:\beginner_of_cxx\cxx\task_2_class_string\|
+=======
+PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.30.30705:TargetPlatformVersion=10.0.19041.0:
+Debug|x64|E:\beginner_of_cxx\cxx\task_2_class_string\|
+>>>>>>> 8058ca5609dd57a8417d8df26cb5744146eb7a21
