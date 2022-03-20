@@ -1,0 +1,11 @@
+﻿  task_3_class_vector.cpp
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(33,9): error C3861: newarr: идентификатор не найден
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(104): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Vector<T>"
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(39,21): error C2065: newarr: необъявленный идентификатор
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(39,21): error C3861: newarr: идентификатор не найден
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(47,18): error C2065: newarr: необъявленный идентификатор
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(47,18): error C3861: newarr: идентификатор не найден
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(49,48): error C3861: newarr: идентификатор не найден
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(57,15): error C3861: newarr: идентификатор не найден
+E:\beginner_of_cxx\cxx\task_3_class_vector\task_3_class_vector\task_3_class_vector.cpp(99,33): error C2039: "outofrange": не является членом "std".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\iostream(19): message : см. объявление "std"
