@@ -1,0 +1,10 @@
+﻿  LABA_3_ASD.cpp
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\sorts.h(23,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\sorts.h(34,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\select_time.h(64,2): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\select_time.h(64,55): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\quick_time.h(60,2): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\quick_time.h(60,55): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\bucket_time.h(62,2): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\лабораторные\ASD\LABA_3_ASD\LABA_3_ASD\bucket_time.h(62,55): warning C4244: -=: преобразование "double" в "int", возможна потеря данных
+  LABA_3_ASD.vcxproj -> D:\лабораторные\ASD\LABA_3_ASD\x64\Debug\LABA_3_ASD.exe
