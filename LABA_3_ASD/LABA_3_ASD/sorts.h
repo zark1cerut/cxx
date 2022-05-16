@@ -66,38 +66,38 @@ std::vector<unsigned int> selectSort(std::vector<unsigned int>& arr)
 //-------------------------------------------------------------------
 
 
-void swap(std::vector<unsigned int>& arr, size_t pos1, size_t pos2) {
+void swap(std::vector<unsigned int>& arr, size_t& pos1, size_t& pos2) {
 	int temp;
 	temp = arr[pos1];
 	arr[pos1] = arr[pos2];
 	arr[pos2] = temp;
 }
 
-size_t partition(std::vector<unsigned int>& arr, size_t low, size_t high, size_t pivot) {
-	size_t i = low;
-	size_t j = low;
-	while (i <= high) {
-		if (arr[i] > pivot) {
-			i++;
+void quickSort(std::vector<unsigned int>& arr, size_t low, size_t high)
+{
+	int i = low, j = high;
+	int temp, pivot = arr[(low + high) / 2];
+
+	while (i <= j)
+	{
+		while (arr[i] < pivot) i++;
+		while (arr[j] > pivot) j--;
+
+		if (i <= j)
+		{
+			if (arr[i] > arr[j])
+			{
+				temp = arr[i]; arr[i] = arr[j]; arr[j] = temp;
+			}
+
+			i++; j--;
 		}
-		else {
-			swap(arr, i, j);
-			i++;
-			j++;
-		}
-	}
-	return j - 1;
+	};
+
+	if (low < j) quickSort(arr, low, j);
+	if (i < high) quickSort(arr, i, high);
 }
 
-void quickSort(std::vector<unsigned int>& arr, size_t low, size_t high) {
-	if (low < high) {
-		size_t pivot = arr[high];
-		size_t pos = partition(arr, low, high, pivot);
-
-		quickSort(arr, low, pos - 1);
-		quickSort(arr, pos + 1, high);
-	}
-}
 //-------------------------------------------------------------------
 
 std::vector<unsigned int> bucketSort(std::vector<unsigned int>& array)

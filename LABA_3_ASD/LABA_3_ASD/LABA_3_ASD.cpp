@@ -15,23 +15,15 @@ using namespace std;
 
 int test = 25;
 
-
-
-
-
 int main()
 {
-	
-	
-	
-	
+
 	std::vector<unsigned int> arr(10000);
 	random_vector(arr);
 	quickSort(arr, 0, arr.size() - 1);
 	quickSort(arr, 0, arr.size() - 1);
-	//print_vector(arr);
 
-
+	print_vector(arr);
 
 	//print_vector(arr);
 
