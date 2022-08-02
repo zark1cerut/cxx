@@ -115,10 +115,7 @@ public:
 int main()
 {
 
-    Vector<int> array1(4);
-
-    array1.push_back(2);
-
+   
 
      return 0;
 }
